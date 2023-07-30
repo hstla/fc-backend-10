@@ -3,9 +3,8 @@ package org.example;
 import org.passay.CharacterData;
 import org.passay.CharacterRule;
 import org.passay.EnglishCharacterData;
-import org.passay.PasswordGenerator;
 
-public class RandomPasswordGenerator implements PasswordGeneratePolicy {
+public class RandomPasswordGenerator implements PasswordGenerator {
     /**
      * Special characters allowed in password.
      */
@@ -15,7 +14,7 @@ public class RandomPasswordGenerator implements PasswordGeneratePolicy {
 
     @Override
     public String generatePassword() {
-        PasswordGenerator gen = new PasswordGenerator();
+        org.passay.PasswordGenerator gen = new org.passay.PasswordGenerator();
 
         CharacterData lowerCaseChars = EnglishCharacterData.LowerCase;
         CharacterRule lowerCaseRule = new CharacterRule(lowerCaseChars);
