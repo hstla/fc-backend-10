@@ -1,7 +1,8 @@
 package org.example;
 
 
-import org.assertj.core.api.Assertions;
+import org.example.calculator.Calculator;
+import org.example.calculator.PositiveNumber;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -25,14 +26,14 @@ public class calculatorTest {
     @DisplayName("덧셈연산을 수행한다.")
     @Test
     void additionTest() {
-        int result = Calculator.calculate(1, "+", 2);
+        int result = Calculator.calculate(new PositiveNumber(1), "+", new PositiveNumber(2));
         assertThat(result).isEqualTo(3);
     }
 
     @DisplayName("뺄셈연산을 수행한다.")
     @Test
     void subtractionTest() {
-        int result = Calculator.calculate(1, "-", 2);
+        int result = Calculator.calculate(new PositiveNumber(1), "-", new PositiveNumber(2));
         assertThat(result).isEqualTo(-1);
     }
 
@@ -40,7 +41,7 @@ public class calculatorTest {
     @ParameterizedTest
     @MethodSource("formulaAndResult")
     void calculateTest(int operand1, String operator, int operand2, int result) {
-        int calculateResult = Calculator.calculate(operand1, operator, operand2);
+        int calculateResult = Calculator.calculate(new PositiveNumber(operand1), operator, new PositiveNumber(operand2));
         assertThat(calculateResult).isEqualTo(result);
     }
 
@@ -52,4 +53,12 @@ public class calculatorTest {
                 arguments(4, "/", 2, 2)
         );
     }
+    
+//    @DisplayName("나눗셈에서 0을 나누는 경우 illegalArgumentException 예외를 발생시킨다.")
+//    @Test
+//    public void calculateExceptionTest() throws Exception {
+//        //given
+//        assertThatCode(() -> Calculator.calculate(new PositiveNumber(10), "/",new PositiveNumber(0)))
+//                .isInstanceOf(IllegalArgumentException.class);
+//    }
 }
