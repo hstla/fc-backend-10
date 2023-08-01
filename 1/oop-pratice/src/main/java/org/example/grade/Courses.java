@@ -13,13 +13,6 @@ public class Courses {
         return courses.stream()
                 .mapToDouble(Course::multiplyCreditAndCourseGrade)
                 .sum();
-
-
-//        double multipliedCreditAndCourseGrade = 0;
-//        for (Course course : courses) {
-//            multipliedCreditAndCourseGrade += course.multiplyCreditAndCourseGrade();
-//        }
-//        return multipliedCreditAndCourseGrade;
     }
 
     public int calculateTotalCompletedCredit() {
