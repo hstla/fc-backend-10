@@ -11,17 +11,10 @@ public class Course {
         this.grade = grade;
     }
 
-    public String getSubject() {
-        return subject;
-    }
-
     public int getCredit() {
         return credit;
     }
 
-    public String getGrade() {
-        return grade;
-    }
 
     public double getGradeToNumber() {
         double grade = 0;
@@ -46,5 +39,9 @@ public class Course {
                 break;
         }
         return grade;
+    }
+
+    public double multiplyCreditAndCourseGrade() {
+        return credit * getGradeToNumber();
     }
 }
