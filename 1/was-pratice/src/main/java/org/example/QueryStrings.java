@@ -7,6 +7,7 @@ import java.util.List;
 public class QueryStrings {
     private List<QueryString> queryStrings = new ArrayList<>();
 
+    // "operand1=11  operator=*   operand2=55"
     public QueryStrings(String queryStringLine) {
         String[] queryStringTokens = queryStringLine.split("&");
         Arrays.stream(queryStringTokens)
