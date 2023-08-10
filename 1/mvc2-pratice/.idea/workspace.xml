@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd58527a-7b5e-46ef-b9ec-b9e3b7a23369" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fd58527a-7b5e-46ef-b9ec-b9e3b7a23369" name="변경" comment="mvc 프레임워크 만들기">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/HealthCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/RequestMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotation/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotation/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotation/RequestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +24,22 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="2TknVEwniY513mXNiNGqP76uKHp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,11 +52,22 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_directory_selection": "/Users/hyun/java/fastcampus-backend10/1/mvc2-pratice/src/main/java/org/example/Controller",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.annotation" />
+      <recent name="org.example.Controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ReflectionTest.controllerScan">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="mvc2-pratice.main" />
@@ -53,8 +81,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReflectionTest.controllerScan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mvc2-pratice.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
+      <option name="METHOD_NAME" value="controllerScan" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionTest.controllerScan" />
         <item itemvalue="애플리케이션.Main" />
       </list>
     </recent_temporary>
@@ -67,12 +112,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691595967600</updated>
-      <workItem from="1691595969169" duration="50000" />
+      <workItem from="1691595969169" duration="1974000" />
     </task>
+    <task id="LOCAL-00001" summary="mvc 프레임워크 만들기">
+      <option name="closed" value="true" />
+      <created>1691596047021</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691596047021</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mvc 프레임워크 만들기" />
+    <option name="LAST_COMMIT_MESSAGE" value="mvc 프레임워크 만들기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
