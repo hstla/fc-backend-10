@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38bebc66-7c6f-4ce9-b055-7c2113c84705" name="변경" comment="mvc 실습">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../di-practice/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../di-practice/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691634552939</updated>
       <workItem from="1691634554361" duration="3089000" />
-      <workItem from="1691639198831" duration="12398000" />
+      <workItem from="1691639198831" duration="12680000" />
     </task>
     <task id="LOCAL-00001" summary="톰캣 설정">
       <option name="closed" value="true" />
