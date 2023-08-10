@@ -5,7 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 public class BeanFactory {
-    private final Set<Class<?>> preInst현antiatedClazz;
+    private final Set<Class<?>> preInstantiatedClazz;
     private Map<Class<?>, Object> beans = new HashMap<>();
 
     public BeanFactory(Set<Class<?>> preInstantiatedClazz) {
