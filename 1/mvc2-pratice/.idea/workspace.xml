@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd58527a-7b5e-46ef-b9ec-b9e3b7a23369" name="변경" comment="Controller 애노테이션 클래스 찾기">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Controller/HomeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/annotation/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+    <list default="true" id="fd58527a-7b5e-46ef-b9ec-b9e3b7a23369" name="변경" comment="힙 영역의 로드되어 있는 클래스 객체 가져오기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +157,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691595967600</updated>
-      <workItem from="1691595969169" duration="3006000" />
+      <workItem from="1691595969169" duration="4678000" />
     </task>
     <task id="LOCAL-00001" summary="mvc 프레임워크 만들기">
       <option name="closed" value="true" />
@@ -177,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691630911558</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="힙 영역의 로드되어 있는 클래스 객체 가져오기">
+      <option name="closed" value="true" />
+      <created>1691631957649</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691631957649</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +192,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mvc 프레임워크 만들기" />
     <MESSAGE value="Controller 애노테이션 클래스 찾기" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller 애노테이션 클래스 찾기" />
+    <MESSAGE value="힙 영역의 로드되어 있는 클래스 객체 가져오기" />
+    <option name="LAST_COMMIT_MESSAGE" value="힙 영역의 로드되어 있는 클래스 객체 가져오기" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

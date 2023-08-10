@@ -3,7 +3,6 @@ package org.example;
 import org.example.annotation.Controller;
 import org.example.annotation.Service;
 import org.example.model.User;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
@@ -16,6 +15,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import static org.assertj.core.api.Assertions.*;
+
 public class ReflectionTest {
     private static final Logger logger = LoggerFactory.getLogger(ReflectionTest.class);
 
@@ -23,6 +24,7 @@ public class ReflectionTest {
     void controllerScan() {
         Set<Class<?>> beans = getTypesAnnotatedWith(List.of(Controller.class, Service.class));
         logger.debug("beans: [{}]", beans);
+
     }
 
     @Test
@@ -46,9 +48,9 @@ public class ReflectionTest {
         logger.debug("clazz: [{}]", clazz);
         logger.debug("clazz2: [{}]", clazz2);
         logger.debug("clazz3: [{}]", clazz3);
-        Assertions.assertTrue(clazz == clazz2);
-        Assertions.assertTrue(clazz2 == clazz3);
-        Assertions.assertTrue(clazz3 == clazz);
+        assertThat(clazz == clazz2).isTrue();
+        assertThat(clazz2 == clazz3).isTrue();
+        assertThat(clazz3 == clazz).isTrue();
     }
 
     private static Set<Class<?>> getTypesAnnotatedWith(List<Class<? extends Annotation>> annotations) {
