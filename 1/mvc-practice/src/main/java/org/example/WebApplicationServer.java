@@ -10,7 +10,7 @@ import java.io.File;
 public class WebApplicationServer {
     private static final Logger log = LoggerFactory.getLogger(WebApplicationServer.class);
 
-    public static void main(String[] args) throws LifecycleException {
+    public static void main(String[] args) throws Exception {
         String webappDirLocation = "webapps/";
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(8080);
@@ -20,6 +20,5 @@ public class WebApplicationServer {
 
         tomcat.start();
         tomcat.getServer().await();
-        ;
     }
 }
