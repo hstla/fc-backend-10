@@ -2,7 +2,6 @@ package fastcampus.projectboard.repository;
 
 import fastcampus.projectboard.config.JpaConfig;
 import fastcampus.projectboard.domain.Article;
-import fastcampus.projectboard.domain.ArticleComment;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +35,7 @@ class JpaRepositoryTest {
         //then
         assertThat(articles)
                 .isNotNull()
-                .hasSize(0);
+                .hasSize(300);
     }
 
     @DisplayName("insert 테스트")
@@ -48,7 +47,7 @@ class JpaRepositoryTest {
         Article savedArticle = articleRepository.save(Article.of("new article", "new content", "new hashtag"));
         //then
         assertThat(articleRepository.count())
-                .isEqualTo(1);
+                .isEqualTo(1 + previousCount);
 
     }
 
@@ -56,8 +55,6 @@ class JpaRepositoryTest {
     @Test
     public void givenTestData_whenUpdating_thenWorksFine() throws Exception {
         //given
-        articleRepository.save(Article.of("new article", "new content", "new hashtag"));
-
         Article article = articleRepository.findById(1L).orElseThrow();
         article.setHashtag("@springboot");
         //when
@@ -72,9 +69,7 @@ class JpaRepositoryTest {
     @Test
     public void givenTestData_whenDeleting_thenWorksFine() throws Exception {
         //given
-        Article article = articleRepository.saveAndFlush(Article.of("new article", "new content", "new hashtag"));
-        articleCommentRepository.saveAndFlush(ArticleComment.of(article, "new content"));
-
+        Article article = articleRepository.findById(1L).orElseThrow();
         long previousArticleCount = articleRepository.count();
         long previousArticleCommentCount = articleCommentRepository.count();
         int deletedCommentSize = article.getArticleComments().size();
