@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,14 +9,7 @@
 </head>
 
 <body>
-<!--    헤더 시멘틱-->
-<!--    메인 페이지 - 테이블-->
-<!--    푸터-->
-    <header>
-<!--        header 삽입부-->
-        <hr>
-    </header>
-
+    <header th:replace="~{header :: #header}"></header>
     <main>
 <!--        검색창-->
         <form action="">
@@ -77,16 +70,9 @@
                 </tr>
             </table>
         </nav>
-
     </main>
 
-
-    <footer>
-        <hr>
-        footer 삽입부
-    </footer>
-
-
+    <footer th:replace="footer :: #footer"></footer>
 
 <!-- TODO: 루트 패쓰는 게시판으로 redirect 되므로, 이 페이지는 이제 쓰이지 않는다. 나중에 삭제 검토. -->
 </body>
